@@ -1,0 +1,29 @@
+<?php
+class Astronaut
+{
+    public $name;
+    public $snacks;
+    public $destination;
+    public static $id = 0;
+    public $idbis;
+
+    public function __construct($nom) {
+        $this -> idbis = Astronaut :: $id ++;
+        $this -> name = $nom;
+        echo $this -> name. "ready for launch !\n";
+        $this -> destination = NULL;
+        $this -> snacks = 0;
+    }
+    public function getId(){
+        return $this -> idbis;
+    }
+
+    public function getDestination() {
+        return $this -> destination;
+    }
+}
+$mutta = new Astronaut ("Mutta");
+$hibito = new Astronaut("Hibito");
+echo $mutta->getIt() . "\n";
+echo $hibito->getId() . "\n";
+?>
