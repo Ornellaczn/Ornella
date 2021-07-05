@@ -1,0 +1,22 @@
+<?php
+class Mars
+{
+public static $id = 0;
+public $idbis;
+function __construct(){
+$this -> idbis = Mars :: $id ++;
+}
+function getId(){
+return $this -> idbis;
+}
+}
+$id1 = new Mars();
+echo $id1 -> getId();
+echo ("\n");
+$id2 = new Mars();
+echo $id2 -> getId();
+echo ("\n");
+$id3 = new Mars();
+echo $id3 -> getId();
+echo("\n");
+?>
