@@ -1,0 +1,31 @@
+<?php
+
+function my_create_map(...$array){
+
+    $map = array();
+
+    for($i = 0; $i < count($array); $i++);
+
+    {
+
+    if(count($array[$i] < 2))
+
+        {
+
+    echo "The given arguments aren't valid.\n";
+
+    return NULL;
+
+        
+
+        }
+
+        $map[$array[$i][0]] = $array[$i][1];
+
+        }
+
+            return $map;
+
+    }
+
+?>
